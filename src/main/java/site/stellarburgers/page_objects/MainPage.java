@@ -13,6 +13,7 @@ public class MainPage extends Page{
         return pageUrl;
     }
 
+
     public MainPage(WebDriver driver) {
         super(driver);
         driver.get(pageUrl);
