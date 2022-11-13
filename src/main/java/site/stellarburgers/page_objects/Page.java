@@ -11,8 +11,8 @@ public abstract class Page {
     public String currentUrl;
 
     public static final String LOGIN = "/login";
-
     public static final String FORGOT_PASSWORD = "/forgot-password";
+    public static final String PROFILE = "/account/profile";
 
     public Page(WebDriver driver) {
         this.driver = driver;

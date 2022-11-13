@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b47f91f1-c075-4e2a-ba30-745b7ce41ffe" name="Changes" comment="LoginPage add">
-      <change afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/PasswordRecoveryPage.java" afterDir="false" />
+    <list default="true" id="b47f91f1-c075-4e2a-ba30-745b7ce41ffe" name="Changes" comment="PasswordRecoveryPage add">
+      <change afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/ProfilePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/PasswordRecoveryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/PasswordRecoveryPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668354892184</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="PasswordRecoveryPage add">
+      <created>1668356306426</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668356306426</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,6 +115,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="MainPage add" />
     <MESSAGE value="LoginPage add" />
-    <option name="LAST_COMMIT_MESSAGE" value="LoginPage add" />
+    <MESSAGE value="PasswordRecoveryPage add" />
+    <option name="LAST_COMMIT_MESSAGE" value="PasswordRecoveryPage add" />
   </component>
 </project>

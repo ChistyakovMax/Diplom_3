@@ -21,7 +21,6 @@ public class PasswordRecoveryPage extends Page{
     private WebElement signInLink;
 
 
-
     //шаги
     @Step("Нажать на ссылку Войти (Вспомнили пароль?)")
     public void clickSignInLink(){
