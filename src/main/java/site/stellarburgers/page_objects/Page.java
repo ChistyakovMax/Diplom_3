@@ -6,6 +6,10 @@ public abstract class Page {
 
     WebDriver driver;
 
+    public static String pageUrl = "https://stellarburgers.nomoreparties.site/";
+
+    public static String LOGIN = "/login";
+
     public Page(WebDriver driver) {
         this.driver = driver;
     }

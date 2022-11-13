@@ -7,16 +7,20 @@ import org.openqa.selenium.support.FindBy;
 
 public class MainPage extends Page{
 
-    String pageUrl = "https://stellarburgers.nomoreparties.site/";
+    String mainPageUrl = pageUrl;
 
-    public String getPageUrl() {
-        return pageUrl;
+    public String getMainPageUrl() {
+        return mainPageUrl;
     }
 
     public MainPage(WebDriver driver) {
         super(driver);
-        driver.get(pageUrl);
+        driver.get(mainPageUrl);
     }
+
+    //кнопка Войти в аккаунт
+    @FindBy(xpath = ".//button[text()='Войти в аккаунт']")
+    private WebElement signInButton;
 
     //кнопка Оформить заказ
     @FindBy(xpath = ".//button[text() = 'Оформить заказ']")
@@ -60,6 +64,10 @@ public class MainPage extends Page{
 
 
 
+    @Step("Клик на кнопку Войти в аккаунт")
+    public void clickSignInButton(){
+        signInButton.click();
+    }
 
     @Step("Создать заказ")
     public void clickConstructor(){
