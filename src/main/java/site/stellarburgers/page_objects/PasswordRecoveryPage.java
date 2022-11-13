@@ -4,6 +4,10 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class PasswordRecoveryPage extends Page{
 
@@ -16,15 +20,10 @@ public class PasswordRecoveryPage extends Page{
     @FindBy(xpath = ".//button[text()='Восстановить']")
     private WebElement restorePasswordButton;
 
-    //ссылка Войти (Вспомнили пароль?)
-    @FindBy(xpath = ".//a[text() = 'Войти']")
-    private WebElement signInLink;
-
-
-    //шаги
-    @Step("Нажать на ссылку Войти (Вспомнили пароль?)")
-    public void clickSignInLink(){
-        signInLink.click();
+    //вспомогательные методы
+    public void waitRestorePasswordButton() {
+        new WebDriverWait(driver, Duration.ofSeconds(3))
+                .until(ExpectedConditions.visibilityOf(restorePasswordButton));
     }
 
 }
