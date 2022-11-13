@@ -6,12 +6,20 @@ public abstract class Page {
 
     WebDriver driver;
 
-    public static String pageUrl = "https://stellarburgers.nomoreparties.site/";
+    public static final String pageUrl = "https://stellarburgers.nomoreparties.site/";
 
-    public static String LOGIN = "/login";
+    public String currentUrl;
+
+    public static final String LOGIN = "/login";
+
+    public static final String FORGOT_PASSWORD = "/forgot-password";
 
     public Page(WebDriver driver) {
         this.driver = driver;
+    }
+
+    public String getCurrentUrl(){
+        return currentUrl;
     }
 
 }

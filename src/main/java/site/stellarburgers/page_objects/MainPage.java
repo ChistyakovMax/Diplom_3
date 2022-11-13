@@ -7,15 +7,14 @@ import org.openqa.selenium.support.FindBy;
 
 public class MainPage extends Page{
 
-    String mainPageUrl = pageUrl;
-
     public String getMainPageUrl() {
-        return mainPageUrl;
+        return currentUrl;
     }
 
     public MainPage(WebDriver driver) {
         super(driver);
-        driver.get(mainPageUrl);
+        currentUrl = pageUrl;
+        driver.get(currentUrl);
     }
 
     //кнопка Войти в аккаунт
@@ -63,7 +62,7 @@ public class MainPage extends Page{
 
 
 
-
+    //шаги
     @Step("Клик на кнопку Войти в аккаунт")
     public void clickSignInButton(){
         signInButton.click();

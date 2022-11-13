@@ -11,12 +11,10 @@ import java.time.Duration;
 
 public class LoginPage extends Page{
 
-    String loginPageUrl = pageUrl + LOGIN;
-
     public LoginPage(WebDriver driver) {
         super(driver);
+        currentUrl = pageUrl + LOGIN;
     }
-
 
     //инпут Email
     @FindBy(xpath = ".//input[@name = 'name']")
@@ -48,10 +46,6 @@ public class LoginPage extends Page{
     }
 
     //вспомогательные функции
-    public String getUrl() {
-        return loginPageUrl;
-    }
-
     public void waitSignInButton() {
         new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.visibilityOf(signInButton));
