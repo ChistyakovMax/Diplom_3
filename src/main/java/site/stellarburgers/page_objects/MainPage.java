@@ -48,9 +48,7 @@ public class MainPage extends BasePage {
     @FindBy(xpath = ".//p[text() = 'Конструктор']")
     private WebElement constructor;
 
-    //лого stellarburgers
-    @FindBy(xpath = ".//div[@class = 'AppHeader_header__logo__2D0X2']")
-    private WebElement stellarburgersLogo;
+
 
 
 
@@ -70,11 +68,6 @@ public class MainPage extends BasePage {
     @Step("Создать заказ")
     public void clickConstructor(){
         constructor.click();
-    }
-
-    @Step("Клик на лого stellarburgers")
-    public void clickStellarburgersLogo(){
-        stellarburgersLogo.click();
     }
 
     @Step("Клик по кнопке Оформить заказ")

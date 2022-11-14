@@ -53,7 +53,7 @@ public class LoginPage extends BasePage {
 
     //вспомогательные функции
     public void waitForSignInButton() {
-        new WebDriverWait(driver, Duration.ofSeconds(10))
+        new WebDriverWait(driver, Duration.ofSeconds(3))
                 .until(ExpectedConditions.visibilityOf(signInButton));
     }
 
