@@ -16,6 +16,10 @@ public class ProfilePage extends BasePage {
         currentUrl = pageUrl + PROFILE;
     }
 
+    //конструктор
+    @FindBy(xpath = ".//p[text() = 'Конструктор']")
+    private WebElement constructor;
+
     //ссылка Профиль
     @FindBy(xpath = ".//a[text() = 'Профиль']")
     private WebElement profileLink;
@@ -25,15 +29,19 @@ public class ProfilePage extends BasePage {
     private WebElement logOutButton;
 
 
-
     //шаги
+    @Step("Создать заказ")
+    public void clickConstructor(){
+        constructor.click();
+    }
+
     @Step("Клик на кнопку Выход")
     public void clickLogOutButton(){
         logOutButton.click();
     }
 
     //вспомогательные методы
-    public void waitProfileLink() {
+    public void waitForProfileLink() {
         new WebDriverWait(driver, Duration.ofSeconds(3))
                 .until(ExpectedConditions.visibilityOf(profileLink));
     }

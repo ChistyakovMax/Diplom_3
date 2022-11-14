@@ -40,6 +40,12 @@ public class LoginPage extends BasePage {
         passwordInput.sendKeys(password);
     }
 
+    @Step("Ввести креды")
+    public void fillEmailAndPassword(String email, String password) {
+        this.fillEmailInput(email);
+        this.fillPasswordInput(password);
+    }
+
     @Step("Клик на кнопку Войти")
     public void clickSignInButton(){
         signInButton.click();

@@ -14,7 +14,6 @@ public class MainPage extends BasePage {
     public MainPage(WebDriver driver) {
         super(driver);
         currentUrl = pageUrl;
-        driver.get(currentUrl);
     }
 
     //кнопка Войти в аккаунт
@@ -115,7 +114,7 @@ public class MainPage extends BasePage {
     }
 
     public void waitForOrderButton() {
-        new WebDriverWait(driver, Duration.ofSeconds(3))
+        new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.visibilityOf(getOrderButton));
     }
 

@@ -19,7 +19,6 @@ public class RegistrationTest extends BaseTest {
 
     @Before
     public void start() {
-        //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         registrationPage = new RegistrationPage(driver);
         PageFactory.initElements(driver, registrationPage);
         driver.get(registrationPage.getCurrentUrl());
