@@ -9,9 +9,9 @@ public abstract class Page {
 
     WebDriver driver;
 
-    public static final String pageUrl = "https://stellarburgers.nomoreparties.site/";
+    public static final String pageUrl = "https://stellarburgers.nomoreparties.site";
 
-    public String currentUrl;
+    protected String currentUrl;
 
     public static final String LOGIN = "/login";
     public static final String FORGOT_PASSWORD = "/forgot-password";

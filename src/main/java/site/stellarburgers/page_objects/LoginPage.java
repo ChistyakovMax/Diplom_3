@@ -46,7 +46,7 @@ public class LoginPage extends Page{
     }
 
     //вспомогательные функции
-    public void waitSignInButton() {
+    public void waitForSignInButton() {
         new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.visibilityOf(signInButton));
     }

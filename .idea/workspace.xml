@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b47f91f1-c075-4e2a-ba30-745b7ce41ffe" name="Changes" comment="RegistrationPage add">
-      <change afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/RegistrationTest.java" afterDir="false" />
+    <list default="true" id="b47f91f1-c075-4e2a-ba30-745b7ce41ffe" name="Changes" comment="Base test add">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/RegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/site/stellarburgers/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/RegistrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +52,7 @@
       <command value="Зарегистрироваться" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.RegistrationTest.createValidUserSuccessfullyCreated">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="site.stellarburgers.Main" />
       <module name="Diplom_3" />
@@ -64,8 +66,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RegistrationTest.createValidUserSuccessfullyCreated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="site.stellarburgers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="site.stellarburgers" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.RegistrationTest" />
+      <option name="METHOD_NAME" value="createValidUserSuccessfullyCreated" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RegistrationTest.createValidUserSuccessfullyCreated" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
@@ -116,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668359258679</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Base test add">
+      <created>1668414608213</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668414608213</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -136,6 +162,23 @@
     <MESSAGE value="PasswordRecoveryPage add" />
     <MESSAGE value="ProfilePage add" />
     <MESSAGE value="RegistrationPage add" />
-    <option name="LAST_COMMIT_MESSAGE" value="RegistrationPage add" />
+    <MESSAGE value="Base test add" />
+    <option name="LAST_COMMIT_MESSAGE" value="Base test add" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/RegistrationPage.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="driver" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

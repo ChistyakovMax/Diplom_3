@@ -1,6 +1,7 @@
 package site.stellarburgers.page_objects;
 
 import io.qameta.allure.Step;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,6 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 public class RegistrationPage extends Page{
 
@@ -41,8 +43,9 @@ public class RegistrationPage extends Page{
 
     //шаги
     @Step("Ввести имя")
-    public void fillNameInput(String name){
-        nameInput.sendKeys(name);
+    public void fillNameInput(String name) {
+        //nameInput.sendKeys(name);
+        driver.findElement(By.xpath(".//fieldset[1]//input")).sendKeys(name);
     }
 
     @Step("Ввести Email")
@@ -68,9 +71,11 @@ public class RegistrationPage extends Page{
 
 
     //вспомогательные методы
-    public void waitRegButton() {
+    public void waitForSignUpButton() throws InterruptedException {
+        Thread.sleep(10000);
         new WebDriverWait(driver, Duration.ofSeconds(3))
                 .until(ExpectedConditions.visibilityOf(signUpButton));
+                //.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//button[text()='Зарегистрироваться']")));
     }
 
     public void waitForIncorrectPasswordError() {
