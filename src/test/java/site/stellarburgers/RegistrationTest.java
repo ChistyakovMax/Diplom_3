@@ -12,7 +12,7 @@ import site.stellarburgers.page_objects.RegistrationPage;
 import java.time.Duration;
 
 @Description("Регистрация нового пользователя")
-public class RegistrationTest extends BaseTest{
+public class RegistrationTest extends BaseTest {
 
     RegistrationPage registrationPage;
 
@@ -34,12 +34,10 @@ public class RegistrationTest extends BaseTest{
 
     @Test
     @Description("Создание валидного пользователя")
-    public void createValidUserSuccessfullyCreated() throws InterruptedException {
+    public void createValidUserSuccessfullyCreated() {
         password = RandomStringUtils.randomAlphanumeric(10);
 
-        registrationPage.fillNameInput(name);
-        registrationPage.fillEmailInput(email);
-        registrationPage.fillPasswordInput(password);
+        registrationPage.fillAllTheFields(name, email, password);
         registrationPage.clickSignUpButton();
 
         LoginPage loginPage = new LoginPage(driver);
@@ -49,7 +47,17 @@ public class RegistrationTest extends BaseTest{
         Assert.assertEquals(loginPage.getCurrentUrl(), driver.getCurrentUrl());
     }
 
+    @Test
+    @Description("Проверка ошибки поля Пароль при создании пользователя")
+    public void createUserWithIncorrectPasswordGetError() {
+        //Минимальный пароль — шесть символов
+        password = "1234";
 
+        registrationPage.fillAllTheFields(name, email, password);
+        registrationPage.clickSignUpButton();
 
+        registrationPage.waitForIncorrectPasswordError();
+        Assert.assertEquals("Некорректный пароль", registrationPage.getIncorrectPasswordErrorText());
+    }
 
 }

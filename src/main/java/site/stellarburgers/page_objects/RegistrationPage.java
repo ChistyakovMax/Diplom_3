@@ -55,6 +55,13 @@ public class RegistrationPage extends Page{
         passwordInput.sendKeys(password);
     }
 
+    @Step("Заполнить все поля")
+    public void fillAllTheFields(String name, String email, String password){
+        this.fillNameInput(name);
+        this.fillEmailInput(email);
+        this.fillPasswordInput(password);
+    }
+
     @Step("клик на кнопку Зарегистрироваться")
     public void clickSignUpButton(){
         signUpButton.click();
