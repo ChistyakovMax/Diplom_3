@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b47f91f1-c075-4e2a-ba30-745b7ce41ffe" name="Changes" comment="profile page tests add">
-      <change afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/EntryParamTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/EntryTest.java" afterDir="false" />
+    <list default="true" id="b47f91f1-c075-4e2a-ba30-745b7ce41ffe" name="Changes" comment="first entry test add">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/site/stellarburgers/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/site/stellarburgers/ProfileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/ProfileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/site/stellarburgers/EntryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/EntryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +49,7 @@
       <command value="Зарегистрироваться" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EntryTest.clickLogInOnMainPageUserLoggedIn">
+  <component name="RunManager" selected="JUnit.EntryTest.clickSignInLinkOnPasswordRecoveryPageUserLoggedIn">
     <configuration name="EntryTest.clickLogInOnMainPageUserLoggedIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_3" />
       <extension name="coverage">
@@ -64,6 +61,54 @@
       <option name="PACKAGE_NAME" value="site.stellarburgers" />
       <option name="MAIN_CLASS_NAME" value="site.stellarburgers.EntryTest" />
       <option name="METHOD_NAME" value="clickLogInOnMainPageUserLoggedIn" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EntryTest.clickPersonalAccountButtonOnMainPageUserLoggedIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="site.stellarburgers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="site.stellarburgers" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.EntryTest" />
+      <option name="METHOD_NAME" value="clickPersonalAccountButtonOnMainPageUserLoggedIn" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EntryTest.clickSignInLinkOnPasswordRecoveryPageUserLoggedIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="site.stellarburgers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="site.stellarburgers" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.EntryTest" />
+      <option name="METHOD_NAME" value="clickSignInLinkOnPasswordRecoveryPageUserLoggedIn" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EntryTest.clickSignInLinkOnRegistrationPageUserLoggedIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="site.stellarburgers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="site.stellarburgers" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.EntryTest" />
+      <option name="METHOD_NAME" value="clickSignInLinkOnRegistrationPageUserLoggedIn" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -84,61 +129,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProfileTest.clickConstructorRedirectedToMainPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="site.stellarburgers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="site.stellarburgers" />
-      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.ProfileTest" />
-      <option name="METHOD_NAME" value="clickConstructorRedirectedToMainPage" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProfileTest.clickLogOutButtonLogOut" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="site.stellarburgers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="site.stellarburgers" />
-      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.ProfileTest" />
-      <option name="METHOD_NAME" value="clickLogOutButtonLogOut" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProfileTest.clickLogoRedirectedToMainPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="site.stellarburgers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="site.stellarburgers" />
-      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.ProfileTest" />
-      <option name="METHOD_NAME" value="clickLogoRedirectedToMainPage" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EntryTest.clickSignInLinkOnPasswordRecoveryPageUserLoggedIn" />
+        <item itemvalue="JUnit.EntryTest.clickSignInLinkOnRegistrationPageUserLoggedIn" />
+        <item itemvalue="JUnit.EntryTest.clickPersonalAccountButtonOnMainPageUserLoggedIn" />
         <item itemvalue="JUnit.EntryTest.clickLogInOnMainPageUserLoggedIn" />
         <item itemvalue="JUnit.ProfileTest" />
-        <item itemvalue="JUnit.ProfileTest.clickLogOutButtonLogOut" />
-        <item itemvalue="JUnit.ProfileTest.clickLogoRedirectedToMainPage" />
-        <item itemvalue="JUnit.ProfileTest.clickConstructorRedirectedToMainPage" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668432518994</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="first entry test add">
+      <created>1668441429215</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1668441429215</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -262,7 +266,8 @@
     <MESSAGE value="ConstructorTabsTest add" />
     <MESSAGE value="clickPersonalAccountButtonRedirectedToProfilePage test add" />
     <MESSAGE value="profile page tests add" />
-    <option name="LAST_COMMIT_MESSAGE" value="profile page tests add" />
+    <MESSAGE value="first entry test add" />
+    <option name="LAST_COMMIT_MESSAGE" value="first entry test add" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

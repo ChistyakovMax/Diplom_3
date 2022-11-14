@@ -20,7 +20,7 @@ public class PasswordRecoveryPage extends BasePage {
     private WebElement restorePasswordButton;
 
     //вспомогательные методы
-    public void waitRestorePasswordButton() {
+    public void waitForRestorePasswordButton() {
         new WebDriverWait(driver, Duration.ofSeconds(3))
                 .until(ExpectedConditions.visibilityOf(restorePasswordButton));
     }
