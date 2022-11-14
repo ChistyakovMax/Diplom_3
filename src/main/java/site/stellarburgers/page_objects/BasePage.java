@@ -5,11 +5,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public abstract class Page {
+public abstract class BasePage {
 
     WebDriver driver;
 
-    public static final String pageUrl = "https://stellarburgers.nomoreparties.site";
+    protected static final String pageUrl = "https://stellarburgers.nomoreparties.site";
 
     protected String currentUrl;
 
@@ -18,7 +18,7 @@ public abstract class Page {
     public static final String PROFILE = "/account/profile";
     public static final String REGISTER = "/register";
 
-    public Page(WebDriver driver) {
+    public BasePage(WebDriver driver) {
         this.driver = driver;
     }
 

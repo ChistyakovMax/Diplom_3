@@ -9,8 +9,6 @@ import org.openqa.selenium.support.PageFactory;
 import site.stellarburgers.page_objects.LoginPage;
 import site.stellarburgers.page_objects.RegistrationPage;
 
-import java.time.Duration;
-
 @Description("Регистрация нового пользователя")
 public class RegistrationTest extends BaseTest {
 
@@ -21,11 +19,9 @@ public class RegistrationTest extends BaseTest {
 
     @Before
     public void start() {
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         registrationPage = new RegistrationPage(driver);
-
         PageFactory.initElements(driver, registrationPage);
-
         driver.get(registrationPage.getCurrentUrl());
         registrationPage.waitForSignUpButton();
 

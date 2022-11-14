@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b47f91f1-c075-4e2a-ba30-745b7ce41ffe" name="Changes" comment="create valid user test add">
+    <list default="true" id="b47f91f1-c075-4e2a-ba30-745b7ce41ffe" name="Changes" comment="get error after create invalid user test add">
+      <change afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/ConstructorTabsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/PasswordRecoveryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/PasswordRecoveryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/ProfilePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/RegistrationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/site/stellarburgers/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/RegistrationTest.java" afterDir="false" />
     </list>
@@ -50,7 +56,7 @@
       <command value="Зарегистрироваться" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RegistrationTest">
+  <component name="RunManager" selected="JUnit.ConstructorTabsTest.switchToToppingsTabTabSwitched">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="site.stellarburgers.Main" />
       <module name="Diplom_3" />
@@ -60,6 +66,37 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConstructorTabsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="site.stellarburgers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="site.stellarburgers" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.ConstructorTabsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConstructorTabsTest.switchToToppingsTabTabSwitched" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="site.stellarburgers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="site.stellarburgers" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.ConstructorTabsTest" />
+      <option name="METHOD_NAME" value="switchToToppingsTabTabSwitched" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -97,10 +134,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ConstructorTabsTest.switchToToppingsTabTabSwitched" />
+        <item itemvalue="JUnit.ConstructorTabsTest" />
         <item itemvalue="JUnit.RegistrationTest" />
         <item itemvalue="JUnit.RegistrationTest.createValidUserSuccessfullyCreated" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -170,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668419576614</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="get error after create invalid user test add">
+      <created>1668421213141</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1668421213141</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,7 +237,8 @@
     <MESSAGE value="Base test add" />
     <MESSAGE value="debug" />
     <MESSAGE value="create valid user test add" />
-    <option name="LAST_COMMIT_MESSAGE" value="create valid user test add" />
+    <MESSAGE value="get error after create invalid user test add" />
+    <option name="LAST_COMMIT_MESSAGE" value="get error after create invalid user test add" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

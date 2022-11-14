@@ -4,12 +4,12 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class MainPage extends Page{
+import java.time.Duration;
 
-    public String getMainPageUrl() {
-        return currentUrl;
-    }
+public class MainPage extends BasePage {
 
     public MainPage(WebDriver driver) {
         super(driver);
@@ -89,8 +89,8 @@ public class MainPage extends Page{
     }
 
     @Step("Получить название активного раздела ингредиентов")
-    public void getCurrentTabText(){
-        currentTab.getText();
+    public String getCurrentTabText(){
+        return currentTab.getText();
     }
 
     @Step("Клик на раздел Булки")
@@ -104,8 +104,19 @@ public class MainPage extends Page{
     }
 
     @Step("Клик на раздел Начинки")
-    public void clickToppingTab(){
+    public void clickToppingsTab(){
         toppingTab.click();
+    }
+
+    //вспомогательные методы
+    public void waitForSignInButton() {
+        new WebDriverWait(driver, Duration.ofSeconds(3))
+                .until(ExpectedConditions.visibilityOf(signInButton));
+    }
+
+    public void waitForOrderButton() {
+        new WebDriverWait(driver, Duration.ofSeconds(3))
+                .until(ExpectedConditions.visibilityOf(getOrderButton));
     }
 
 }

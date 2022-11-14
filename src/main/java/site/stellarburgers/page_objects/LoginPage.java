@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class LoginPage extends Page{
+public class LoginPage extends BasePage {
 
     public LoginPage(WebDriver driver) {
         super(driver);
