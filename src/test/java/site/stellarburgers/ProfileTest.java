@@ -15,10 +15,6 @@ public class ProfileTest extends BaseTest {
     MainPage mainPage;
     ProfilePage profilePage;
 
-    //creds
-    private final String email = "biberbest66@mail.ru";
-    private final String password = "Password1234!";
-
     @Before
     public void start() {
         //до начала всех тестов нужно залогиниться в приложении
@@ -28,7 +24,7 @@ public class ProfileTest extends BaseTest {
         loginPage.waitForSignInButton();
 
         //ввести креды
-        loginPage.fillEmailAndPassword(email, password);
+        loginPage.fillEmailAndPassword(super.emailCred, super.passwordCred);
         loginPage.clickSignInButton();
 
         //потом перейти на главную страницу

@@ -10,6 +10,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public abstract class BaseTest {
 
     WebDriver driver;
+    //creds
+    protected final String emailCred = "biberbest66@mail.ru";
+    protected final String passwordCred = "Password1234!";
 
     @Before
     public void setup() {

@@ -100,6 +100,11 @@ public class MainPage extends BasePage {
         toppingTab.click();
     }
 
+    @Step("Чек, что кнопка Оформить заказ отображается")
+    public boolean isDisplayedGetOrderButton() {
+        return getOrderButton.isDisplayed();
+    }
+
     //вспомогательные методы
     public void waitForSignInButton() {
         new WebDriverWait(driver, Duration.ofSeconds(3))
