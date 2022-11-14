@@ -36,9 +36,6 @@ public class RegistrationPage extends BasePage {
     @FindBy(xpath = ".//p[text()='Некорректный пароль']")
     private WebElement incorrectPasswordError;
 
-
-
-
     //шаги
     @Step("Ввести имя")
     public void fillNameInput(String name) {
@@ -46,33 +43,31 @@ public class RegistrationPage extends BasePage {
     }
 
     @Step("Ввести Email")
-    public void fillEmailInput(String email){
+    public void fillEmailInput(String email) {
         emailInput.sendKeys(email);
     }
 
     @Step("Ввести пароль")
-    public void fillPasswordInput(String password){
+    public void fillPasswordInput(String password) {
         passwordInput.sendKeys(password);
     }
 
     @Step("Заполнить все поля")
-    public void fillAllTheFields(String name, String email, String password){
+    public void fillAllTheFields(String name, String email, String password) {
         this.fillNameInput(name);
         this.fillEmailInput(email);
         this.fillPasswordInput(password);
     }
 
     @Step("клик на кнопку Зарегистрироваться")
-    public void clickSignUpButton(){
+    public void clickSignUpButton() {
         signUpButton.click();
     }
 
     @Step("Получить текст ошибки Некорректный пароль")
-    public String getIncorrectPasswordErrorText(){
+    public String getIncorrectPasswordErrorText() {
         return incorrectPasswordError.getText();
     }
-
-
 
     //вспомогательные методы
     public void waitForSignUpButton() {

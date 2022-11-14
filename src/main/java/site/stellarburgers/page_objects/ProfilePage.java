@@ -31,12 +31,12 @@ public class ProfilePage extends BasePage {
 
     //шаги
     @Step("Создать заказ")
-    public void clickConstructor(){
+    public void clickConstructor() {
         constructor.click();
     }
 
     @Step("Клик на кнопку Выход")
-    public void clickLogOutButton(){
+    public void clickLogOutButton() {
         logOutButton.click();
     }
 

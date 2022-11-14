@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b47f91f1-c075-4e2a-ba30-745b7ce41ffe" name="Changes" comment="other entry tests add">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b47f91f1-c075-4e2a-ba30-745b7ce41ffe" name="Changes" comment="allure reports add">
       <change beforePath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/RegistrationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/site/stellarburgers/ConstructorTabsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/ConstructorTabsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/site/stellarburgers/EntryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/EntryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/site/stellarburgers/ProfileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/ProfileTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/site/stellarburgers/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/RegistrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668442093693</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="allure reports add">
+      <created>1668451444665</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1668451444665</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -281,7 +285,8 @@
     <MESSAGE value="profile page tests add" />
     <MESSAGE value="first entry test add" />
     <MESSAGE value="other entry tests add" />
-    <option name="LAST_COMMIT_MESSAGE" value="other entry tests add" />
+    <MESSAGE value="allure reports add" />
+    <option name="LAST_COMMIT_MESSAGE" value="allure reports add" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

@@ -44,51 +44,34 @@ public class MainPage extends BasePage {
     @FindBy(xpath = ".//div/span[text()='Начинки']")
     private WebElement toppingTab;
 
-
-
-
-
-
-
-
-
-
-
-
-
     //шаги
     @Step("Клик на кнопку Войти в аккаунт")
-    public void clickSignInButton(){
+    public void clickSignInButton() {
         signInButton.click();
     }
 
-    @Step("Клик по кнопке Оформить заказ")
-    public void clickGetOrderButton(){
-        getOrderButton.click();
-    }
-
     @Step("Клик по кнопке Личный кабинет")
-    public void clickPersonalAccount(){
+    public void clickPersonalAccount() {
         personalAccount.click();
     }
 
     @Step("Получить название активного раздела ингредиентов")
-    public String getCurrentTabText(){
+    public String getCurrentTabText() {
         return currentTab.getText();
     }
 
     @Step("Клик на раздел Булки")
-    public void clickBunsTab(){
+    public void clickBunsTab() {
         bunsTab.click();
     }
 
     @Step("Клик на раздел Соусы")
-    public void clickSaucesTab(){
+    public void clickSaucesTab() {
         saucesTab.click();
     }
 
     @Step("Клик на раздел Начинки")
-    public void clickToppingsTab(){
+    public void clickToppingsTab() {
         toppingTab.click();
     }
 

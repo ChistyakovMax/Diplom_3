@@ -1,7 +1,6 @@
 package site.stellarburgers;
 
 import io.qameta.allure.junit4.DisplayName;
-import jdk.jfr.Description;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Assert;
 import org.junit.Before;

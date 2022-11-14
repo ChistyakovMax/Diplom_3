@@ -22,7 +22,7 @@ public abstract class BasePage {
         this.driver = driver;
     }
 
-    public String getCurrentUrl(){
+    public String getCurrentUrl() {
         return currentUrl;
     }
 
@@ -37,11 +37,12 @@ public abstract class BasePage {
 
     //шаги
     @Step("Клик на лого stellarburgers")
-    public void clickStellarburgersLogo(){
+    public void clickStellarburgersLogo() {
         stellarburgersLogo.click();
     }
+
     @Step("Нажать на ссылку Войти (Вспомнили пароль? / Уже зарегестрированы?)")
-    public void clickSignInLink(){
+    public void clickSignInLink() {
         signInLink.click();
     }
 

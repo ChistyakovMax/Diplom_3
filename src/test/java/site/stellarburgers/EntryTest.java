@@ -1,7 +1,6 @@
 package site.stellarburgers;
 
 
-import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Assert;
@@ -13,7 +12,7 @@ import site.stellarburgers.page_objects.PasswordRecoveryPage;
 import site.stellarburgers.page_objects.RegistrationPage;
 
 @DisplayName("Вход пользователя в приложение")
-public class EntryTest extends BaseTest{
+public class EntryTest extends BaseTest {
 
     MainPage mainPage;
     RegistrationPage registrationPage;
