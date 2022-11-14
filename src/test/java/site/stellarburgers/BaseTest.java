@@ -5,6 +5,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 //общий класс для тестов
 public abstract class BaseTest {
@@ -16,8 +17,16 @@ public abstract class BaseTest {
 
     @Before
     public void setup() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+
+        //тест на Google Chrome
+        /*WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();*/
+
+        //тест на ЯБраузере (пытался сделать с драйвером, но пока не получилось)
+        WebDriverManager.chromedriver().driverVersion("104.0.5112.20").setup();
+        driver = new ChromeDriver(new ChromeOptions().setBinary("C:\\Users\\chist\\AppData\\Local" +
+                "\\Yandex\\YandexBrowser\\Application\\browser.exe"));
+
         driver.manage().window().maximize();
     }
 

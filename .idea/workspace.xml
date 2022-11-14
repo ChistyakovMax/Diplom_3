@@ -4,10 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b47f91f1-c075-4e2a-ba30-745b7ce41ffe" name="Changes" comment="allure reports add">
-      <change beforePath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/RegistrationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/site/stellarburgers/ConstructorTabsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/ConstructorTabsTest.java" afterDir="false" />
+    <list default="true" id="b47f91f1-c075-4e2a-ba30-745b7ce41ffe" name="Changes" comment="code refactored">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/drivers/yandexdriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/site/stellarburgers/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/site/stellarburgers/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/site/stellarburgers/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/1b0122cf-12c4-427f-9bf7-742060f8c8c2-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/1d4d19f8-b7b5-42b0-bc9a-9a31f3f0b352-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/363d43b6-9e64-4482-bd5d-ada2234d611f-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/379cefcc-d03b-4605-9427-6149ad45c7d2-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/3dbc2065-cb6e-46f9-bcbb-8dc62c02258c-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/5061ab17-6c66-4498-b827-63e18d2dc90e-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/5f12268f-4fe5-4d31-8be4-47818d0cc399-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/923c3286-33ec-420e-bd7c-602fc6fda1cc-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/a5a9ac9f-a074-4873-8bbe-5d3489d6425a-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/ace19745-f69e-4581-87f9-215fe2732779-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/allure.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/allure-results/allure.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/bab4328c-7d6a-40f1-9b00-7a7c4de11af9-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/cef65b88-eb59-41f4-9adf-182ffa8d10c9-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/ec5eb543-a40d-4320-a25e-249fd0dfa8b5-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-site.stellarburgers.ConstructorTabsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-site.stellarburgers.ConstructorTabsTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-site.stellarburgers.EntryTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-site.stellarburgers.EntryTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-site.stellarburgers.ProfileTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-site.stellarburgers.ProfileTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-site.stellarburgers.RegistrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-site.stellarburgers.RegistrationTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/site.stellarburgers.ConstructorTabsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/site.stellarburgers.ConstructorTabsTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/site.stellarburgers.EntryTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/site.stellarburgers.EntryTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/site.stellarburgers.ProfileTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/site.stellarburgers.ProfileTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/site.stellarburgers.RegistrationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/site.stellarburgers.RegistrationTest.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +75,23 @@
       <command value="mvn allure:serve" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EntryTest.clickSignInLinkOnPasswordRecoveryPageUserLoggedIn">
+  <component name="RunManager" selected="JUnit.EntryTest.clickLogInOnMainPageUserLoggedIn">
+    <configuration name="ConstructorTabsTest.switchToBunsTabTabSwitched" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="site.stellarburgers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="site.stellarburgers" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.ConstructorTabsTest" />
+      <option name="METHOD_NAME" value="switchToBunsTabTabSwitched" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EntryTest.clickLogInOnMainPageUserLoggedIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_3" />
       <extension name="coverage">
@@ -117,28 +156,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProfileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="site.stellarburgers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="site.stellarburgers" />
-      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.ProfileTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EntryTest.clickLogInOnMainPageUserLoggedIn" />
+        <item itemvalue="JUnit.ConstructorTabsTest.switchToBunsTabTabSwitched" />
         <item itemvalue="JUnit.EntryTest.clickSignInLinkOnPasswordRecoveryPageUserLoggedIn" />
         <item itemvalue="JUnit.EntryTest.clickSignInLinkOnRegistrationPageUserLoggedIn" />
         <item itemvalue="JUnit.EntryTest.clickPersonalAccountButtonOnMainPageUserLoggedIn" />
-        <item itemvalue="JUnit.EntryTest.clickLogInOnMainPageUserLoggedIn" />
-        <item itemvalue="JUnit.ProfileTest" />
       </list>
     </recent_temporary>
   </component>
@@ -256,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668451444665</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="code refactored">
+      <created>1668451865681</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1668451865681</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -286,7 +317,8 @@
     <MESSAGE value="first entry test add" />
     <MESSAGE value="other entry tests add" />
     <MESSAGE value="allure reports add" />
-    <option name="LAST_COMMIT_MESSAGE" value="allure reports add" />
+    <MESSAGE value="code refactored" />
+    <option name="LAST_COMMIT_MESSAGE" value="code refactored" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

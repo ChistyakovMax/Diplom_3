@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: site.stellarburgers.ProfileTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.421 s - in site.stellarburgers.ProfileTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.4 s - in site.stellarburgers.ProfileTest
