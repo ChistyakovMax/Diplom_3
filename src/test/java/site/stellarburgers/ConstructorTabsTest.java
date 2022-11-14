@@ -1,12 +1,14 @@
 package site.stellarburgers;
 
 import io.qameta.allure.Description;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.support.PageFactory;
 import site.stellarburgers.page_objects.MainPage;
 
+@DisplayName("Раздел «Конструктор»")
 public class ConstructorTabsTest extends BaseTest {
 
     MainPage mainPage;
@@ -20,7 +22,7 @@ public class ConstructorTabsTest extends BaseTest {
     }
 
     @Test
-    @Description("Проверка перехода к разделу Булки")
+    @DisplayName("Проверка перехода к разделу Булки")
     public void switchToBunsTabTabSwitched() {
         //сначала выберем другой раздел, чтобы удостовериться, что переключение было
         mainPage.clickSaucesTab();
@@ -30,15 +32,14 @@ public class ConstructorTabsTest extends BaseTest {
     }
 
     @Test
-    @Description("Проверка перехода к разделу Соусы")
+    @DisplayName("Проверка перехода к разделу Соусы")
     public void switchToSaucesTabTabSwitched() {
         mainPage.clickSaucesTab();
-
         Assert.assertEquals("Соусы", mainPage.getCurrentTabText());
     }
 
     @Test
-    @Description("Проверка перехода к разделу Начинки")
+    @DisplayName("Проверка перехода к разделу Начинки")
     public void switchToToppingsTabTabSwitched() {
         mainPage.clickToppingsTab();
         Assert.assertEquals("Начинки", mainPage.getCurrentTabText());

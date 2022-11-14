@@ -2,6 +2,7 @@ package site.stellarburgers;
 
 
 import io.qameta.allure.Description;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
@@ -11,6 +12,7 @@ import site.stellarburgers.page_objects.MainPage;
 import site.stellarburgers.page_objects.PasswordRecoveryPage;
 import site.stellarburgers.page_objects.RegistrationPage;
 
+@DisplayName("Вход пользователя в приложение")
 public class EntryTest extends BaseTest{
 
     MainPage mainPage;
@@ -33,7 +35,7 @@ public class EntryTest extends BaseTest{
     }
 
     @Test
-    @Description("Вход в приложение по кнопке «Войти в аккаунт» на главной странице")
+    @DisplayName("Вход в приложение по кнопке «Войти в аккаунт» на главной странице")
     public void clickLogInOnMainPageUserLoggedIn() {
         mainPage = new MainPage(driver);
         PageFactory.initElements(driver, mainPage);
@@ -44,7 +46,7 @@ public class EntryTest extends BaseTest{
     }
 
     @Test
-    @Description("Вход в приложение через кнопку «Личный кабинет»  на главной странице")
+    @DisplayName("Вход в приложение через кнопку «Личный кабинет»  на главной странице")
     public void clickPersonalAccountButtonOnMainPageUserLoggedIn() {
         mainPage = new MainPage(driver);
         PageFactory.initElements(driver, mainPage);
@@ -55,7 +57,7 @@ public class EntryTest extends BaseTest{
     }
 
     @Test
-    @Description("Вход в приложение через кнопку Войти (Уже зарегестрированы?) на форме регистрации")
+    @DisplayName("Вход в приложение через кнопку Войти (Уже зарегестрированы?) на форме регистрации")
     public void clickSignInLinkOnRegistrationPageUserLoggedIn() {
         registrationPage = new RegistrationPage(driver);
         PageFactory.initElements(driver, registrationPage);
@@ -65,7 +67,7 @@ public class EntryTest extends BaseTest{
     }
 
     @Test
-    @Description("Вход в приложение через кнопку Войти (Вспомнили пароль?) на странице восстановления пароля")
+    @DisplayName("Вход в приложение через кнопку Войти (Вспомнили пароль?) на странице восстановления пароля")
     public void clickSignInLinkOnPasswordRecoveryPageUserLoggedIn() {
         passwordRecoveryPage = new PasswordRecoveryPage(driver);
         PageFactory.initElements(driver, passwordRecoveryPage);

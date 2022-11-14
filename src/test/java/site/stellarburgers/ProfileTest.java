@@ -1,6 +1,7 @@
 package site.stellarburgers;
 
 import io.qameta.allure.Description;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -9,6 +10,7 @@ import site.stellarburgers.page_objects.LoginPage;
 import site.stellarburgers.page_objects.MainPage;
 import site.stellarburgers.page_objects.ProfilePage;
 
+@DisplayName("Переходы на странице личного кабинета")
 public class ProfileTest extends BaseTest {
 
     LoginPage loginPage;
@@ -40,13 +42,13 @@ public class ProfileTest extends BaseTest {
     }
 
     @Test
-    @Description("Переход в ЛК по клику на кнопку Личный кабинет на Главной странице")
+    @DisplayName("Переход в ЛК по клику на кнопку Личный кабинет на Главной странице")
     public void clickPersonalAccountButtonRedirectedToProfilePage() {
         Assert.assertEquals(profilePage.getCurrentUrl(), driver.getCurrentUrl());
     }
 
     @Test
-    @Description("Переход из личного кабинета в конструктор на главной странице")
+    @DisplayName("Переход из личного кабинета в конструктор на главной странице")
     public void clickConstructorRedirectedToMainPage() {
         profilePage.clickConstructor();
         mainPage.waitForOrderButton();
@@ -54,7 +56,7 @@ public class ProfileTest extends BaseTest {
     }
 
     @Test
-    @Description("Переход из личного кабинета на главную страницу по клику на профиль")
+    @DisplayName("Переход из личного кабинета на главную страницу по клику на Лого Stellarburgers")
     public void clickLogoRedirectedToMainPage() {
         profilePage.clickStellarburgersLogo();
         mainPage.waitForOrderButton();
@@ -62,7 +64,7 @@ public class ProfileTest extends BaseTest {
     }
 
     @Test
-    @Description("Выход из профиля по кнопке «Выйти» в личном кабинете")
+    @DisplayName("Выход из профиля по кнопке «Выйти» в личном кабинете")
     public void clickLogOutButtonLogOut() {
         profilePage.clickLogOutButton();
         loginPage.waitForSignInButton();

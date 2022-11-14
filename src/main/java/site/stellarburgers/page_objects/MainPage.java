@@ -44,9 +44,6 @@ public class MainPage extends BasePage {
     @FindBy(xpath = ".//div/span[text()='Начинки']")
     private WebElement toppingTab;
 
-    //конструктор
-    @FindBy(xpath = ".//p[text() = 'Конструктор']")
-    private WebElement constructor;
 
 
 
@@ -63,11 +60,6 @@ public class MainPage extends BasePage {
     @Step("Клик на кнопку Войти в аккаунт")
     public void clickSignInButton(){
         signInButton.click();
-    }
-
-    @Step("Создать заказ")
-    public void clickConstructor(){
-        constructor.click();
     }
 
     @Step("Клик по кнопке Оформить заказ")
