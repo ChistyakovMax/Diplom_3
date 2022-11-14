@@ -5,6 +5,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.support.PageFactory;
 import site.stellarburgers.page_objects.LoginPage;
 import site.stellarburgers.page_objects.RegistrationPage;
 
@@ -15,12 +16,16 @@ public class RegistrationTest extends BaseTest{
 
     RegistrationPage registrationPage;
 
-    private String name = "Max", email, password;
+    private final String name = "Max";
+    private String email, password;
 
     @Before
-    public void start() throws InterruptedException {
+    public void start() {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         registrationPage = new RegistrationPage(driver);
+
+        PageFactory.initElements(driver, registrationPage);
+
         driver.get(registrationPage.getCurrentUrl());
         registrationPage.waitForSignUpButton();
 
@@ -38,6 +43,7 @@ public class RegistrationTest extends BaseTest{
         registrationPage.clickSignUpButton();
 
         LoginPage loginPage = new LoginPage(driver);
+        PageFactory.initElements(driver, loginPage);
         loginPage.waitForSignInButton();
 
         Assert.assertEquals(loginPage.getCurrentUrl(), driver.getCurrentUrl());
