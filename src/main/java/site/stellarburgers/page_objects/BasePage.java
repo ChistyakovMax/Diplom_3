@@ -34,7 +34,6 @@ public abstract class BasePage {
     @FindBy(xpath = ".//a[text() = 'Войти']")
     private WebElement signInLink;
 
-
     //шаги
     @Step("Клик на лого stellarburgers")
     public void clickStellarburgersLogo() {

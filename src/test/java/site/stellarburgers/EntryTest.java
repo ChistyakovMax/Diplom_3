@@ -1,6 +1,5 @@
 package site.stellarburgers;
 
-
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Assert;
@@ -18,7 +17,6 @@ public class EntryTest extends BaseTest {
     RegistrationPage registrationPage;
     PasswordRecoveryPage passwordRecoveryPage;
     LoginPage loginPage;
-
 
     @After
     public void end() {

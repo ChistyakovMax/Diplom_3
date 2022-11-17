@@ -28,15 +28,14 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = ".//button[text()='Войти']")
     private WebElement signInButton;
 
-
     //шаги
     @Step("Ввести почту")
-    public void fillEmailInput(String email){
+    public void fillEmailInput(String email) {
         emailInput.sendKeys(email);
     }
 
     @Step("Ввести пароль")
-    public void fillPasswordInput(String password){
+    public void fillPasswordInput(String password) {
         passwordInput.sendKeys(password);
     }
 
@@ -47,7 +46,7 @@ public class LoginPage extends BasePage {
     }
 
     @Step("Клик на кнопку Войти")
-    public void clickSignInButton(){
+    public void clickSignInButton() {
         signInButton.click();
     }
 

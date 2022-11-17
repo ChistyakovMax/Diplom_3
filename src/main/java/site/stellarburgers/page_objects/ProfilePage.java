@@ -28,7 +28,6 @@ public class ProfilePage extends BasePage {
     @FindBy(xpath = ".//button[text()='Выход']")
     private WebElement logOutButton;
 
-
     //шаги
     @Step("Создать заказ")
     public void clickConstructor() {
