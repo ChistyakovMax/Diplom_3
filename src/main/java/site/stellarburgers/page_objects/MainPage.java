@@ -4,20 +4,22 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class MainPage extends Page{
+import java.time.Duration;
 
-    String pageUrl = "https://stellarburgers.nomoreparties.site/";
-
-    public String getPageUrl() {
-        return pageUrl;
-    }
+public class MainPage extends BasePage {
 
 
     public MainPage(WebDriver driver) {
         super(driver);
-        driver.get(pageUrl);
+        currentUrl = pageUrl;
     }
+
+    //кнопка Войти в аккаунт
+    @FindBy(xpath = ".//button[text()='Войти в аккаунт']")
+    private WebElement signInButton;
 
     //кнопка Оформить заказ
     @FindBy(xpath = ".//button[text() = 'Оформить заказ']")
@@ -43,63 +45,51 @@ public class MainPage extends Page{
     @FindBy(xpath = ".//div/span[text()='Начинки']")
     private WebElement toppingTab;
 
-    //конструктор
-    @FindBy(xpath = ".//p[text() = 'Конструктор']")
-    private WebElement constructor;
-
-    //лого stellarburgers
-    @FindBy(xpath = ".//div[@class = 'AppHeader_header__logo__2D0X2']")
-    private WebElement stellarburgersLogo;
-
-
-
-
-
-
-
-
-
-
-
-
-    @Step("Создать заказ")
-    public void clickConstructor(){
-        constructor.click();
-    }
-
-    @Step("Клик на лого stellarburgers")
-    public void clickStellarburgersLogo(){
-        stellarburgersLogo.click();
-    }
-
-    @Step("Клик по кнопке Оформить заказ")
-    public void clickGetOrderButton(){
-        getOrderButton.click();
+    //шаги
+    @Step("Клик на кнопку Войти в аккаунт")
+    public void clickSignInButton() {
+        signInButton.click();
     }
 
     @Step("Клик по кнопке Личный кабинет")
-    public void clickPersonalAccount(){
+    public void clickPersonalAccount() {
         personalAccount.click();
     }
 
     @Step("Получить название активного раздела ингредиентов")
-    public void getCurrentTabText(){
-        currentTab.getText();
+    public String getCurrentTabText() {
+        return currentTab.getText();
     }
 
     @Step("Клик на раздел Булки")
-    public void clickBunsTab(){
+    public void clickBunsTab() {
         bunsTab.click();
     }
 
     @Step("Клик на раздел Соусы")
-    public void clickSaucesTab(){
+    public void clickSaucesTab() {
         saucesTab.click();
     }
 
     @Step("Клик на раздел Начинки")
-    public void clickToppingTab(){
+    public void clickToppingsTab() {
         toppingTab.click();
+    }
+
+    @Step("Чек, что кнопка Оформить заказ отображается")
+    public boolean isDisplayedGetOrderButton() {
+        return getOrderButton.isDisplayed();
+    }
+
+    //вспомогательные методы
+    public void waitForSignInButton() {
+        new WebDriverWait(driver, Duration.ofSeconds(3))
+                .until(ExpectedConditions.visibilityOf(signInButton));
+    }
+
+    public void waitForOrderButton() {
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.visibilityOf(getOrderButton));
     }
 
 }

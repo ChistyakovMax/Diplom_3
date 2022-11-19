@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b47f91f1-c075-4e2a-ba30-745b7ce41ffe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/MainPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/site/stellarburgers/page_objects/Page.java" afterDir="false" />
+    <list default="true" id="b47f91f1-c075-4e2a-ba30-745b7ce41ffe" name="Changes" comment="YandexBrowser add">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +20,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -38,16 +36,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.Main" />
+}</component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="Зарегистрироваться" />
+      <command value="mvn clean test" />
+      <command value="mvn allure:serve" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.EntryTest.clickLogInOnMainPageUserLoggedIn">
+    <configuration name="ConstructorTabsTest.switchToBunsTabTabSwitched" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_3" />
       <extension name="coverage">
         <pattern>
@@ -55,13 +59,85 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="site.stellarburgers" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.ConstructorTabsTest" />
+      <option name="METHOD_NAME" value="switchToBunsTabTabSwitched" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EntryTest.clickLogInOnMainPageUserLoggedIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="site.stellarburgers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="site.stellarburgers" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.EntryTest" />
+      <option name="METHOD_NAME" value="clickLogInOnMainPageUserLoggedIn" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EntryTest.clickPersonalAccountButtonOnMainPageUserLoggedIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="site.stellarburgers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="site.stellarburgers" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.EntryTest" />
+      <option name="METHOD_NAME" value="clickPersonalAccountButtonOnMainPageUserLoggedIn" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EntryTest.clickSignInLinkOnPasswordRecoveryPageUserLoggedIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="site.stellarburgers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="site.stellarburgers" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.EntryTest" />
+      <option name="METHOD_NAME" value="clickSignInLinkOnPasswordRecoveryPageUserLoggedIn" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EntryTest.clickSignInLinkOnRegistrationPageUserLoggedIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="site.stellarburgers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="site.stellarburgers" />
+      <option name="MAIN_CLASS_NAME" value="site.stellarburgers.EntryTest" />
+      <option name="METHOD_NAME" value="clickSignInLinkOnRegistrationPageUserLoggedIn" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.EntryTest.clickLogInOnMainPageUserLoggedIn" />
+        <item itemvalue="JUnit.ConstructorTabsTest.switchToBunsTabTabSwitched" />
+        <item itemvalue="JUnit.EntryTest.clickSignInLinkOnPasswordRecoveryPageUserLoggedIn" />
+        <item itemvalue="JUnit.EntryTest.clickSignInLinkOnRegistrationPageUserLoggedIn" />
+        <item itemvalue="JUnit.EntryTest.clickPersonalAccountButtonOnMainPageUserLoggedIn" />
       </list>
     </recent_temporary>
   </component>
@@ -74,6 +150,126 @@
       <option name="presentableId" value="Default" />
       <updated>1668335233759</updated>
     </task>
+    <task id="LOCAL-00001" summary="MainPage add">
+      <created>1668351689561</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668351689561</updated>
+    </task>
+    <task id="LOCAL-00002" summary="LoginPage add">
+      <created>1668354892184</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668354892184</updated>
+    </task>
+    <task id="LOCAL-00003" summary="PasswordRecoveryPage add">
+      <created>1668356306426</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668356306426</updated>
+    </task>
+    <task id="LOCAL-00004" summary="ProfilePage add">
+      <created>1668356914821</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668356914821</updated>
+    </task>
+    <task id="LOCAL-00005" summary="RegistrationPage add">
+      <created>1668359258679</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668359258679</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Base test add">
+      <created>1668414608213</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668414608213</updated>
+    </task>
+    <task id="LOCAL-00007" summary="debug">
+      <created>1668417911249</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1668417911249</updated>
+    </task>
+    <task id="LOCAL-00008" summary="create valid user test add">
+      <created>1668419576614</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1668419576614</updated>
+    </task>
+    <task id="LOCAL-00009" summary="get error after create invalid user test add">
+      <created>1668421213141</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1668421213141</updated>
+    </task>
+    <task id="LOCAL-00010" summary="ConstructorTabsTest add">
+      <created>1668422956387</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1668422956387</updated>
+    </task>
+    <task id="LOCAL-00011" summary="clickPersonalAccountButtonRedirectedToProfilePage test add">
+      <created>1668430261433</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1668430261433</updated>
+    </task>
+    <task id="LOCAL-00012" summary="profile page tests add">
+      <created>1668432518994</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1668432518994</updated>
+    </task>
+    <task id="LOCAL-00013" summary="first entry test add">
+      <created>1668441429215</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1668441429215</updated>
+    </task>
+    <task id="LOCAL-00014" summary="other entry tests add">
+      <created>1668442093693</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1668442093693</updated>
+    </task>
+    <task id="LOCAL-00015" summary="allure reports add">
+      <created>1668451444665</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1668451444665</updated>
+    </task>
+    <task id="LOCAL-00016" summary="code refactored">
+      <created>1668451865681</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1668451865681</updated>
+    </task>
+    <task id="LOCAL-00017" summary="YandexBrowser add">
+      <created>1668454293660</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1668454293660</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -86,5 +282,32 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="MainPage add" />
+    <MESSAGE value="LoginPage add" />
+    <MESSAGE value="PasswordRecoveryPage add" />
+    <MESSAGE value="ProfilePage add" />
+    <MESSAGE value="RegistrationPage add" />
+    <MESSAGE value="Base test add" />
+    <MESSAGE value="debug" />
+    <MESSAGE value="create valid user test add" />
+    <MESSAGE value="get error after create invalid user test add" />
+    <MESSAGE value="ConstructorTabsTest add" />
+    <MESSAGE value="clickPersonalAccountButtonRedirectedToProfilePage test add" />
+    <MESSAGE value="profile page tests add" />
+    <MESSAGE value="first entry test add" />
+    <MESSAGE value="other entry tests add" />
+    <MESSAGE value="allure reports add" />
+    <MESSAGE value="code refactored" />
+    <MESSAGE value="YandexBrowser add" />
+    <option name="LAST_COMMIT_MESSAGE" value="YandexBrowser add" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="driver" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
